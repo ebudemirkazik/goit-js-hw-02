@@ -1,28 +1,39 @@
 # Tasks
 
-# Task 1: Implement makeTransaction Function
+# Task 1: Droid Orders
 
 File: task-1.js
 
-Description: Create a function named makeTransaction that will handle transactions for the droid sales system.
+The makeTransaction(quantity, pricePerDroid, customerCredits) function calculates the total cost of purchasing droids and checks if the customer has enough credits.
 
-Parameters: The function should accept two parameters.
+If the total price exceeds available credits, it returns: "Insufficient funds!"
 
-# Task 2: Implement getShippingMessage Function
+Otherwise, it returns: "You ordered <quantity> droids worth <totalPrice> credits!"
+
+# Task 2: Message Formattingn
 
 File: task-2.js
 
-Description: Define a function called getShippingMessage that takes three parameters and returns a shipping message.
+The formatMessage(message, maxLength) function trims a message to maxLength characters if it exceeds the limit and appends "...".
 
-Parameters: The function should accept the following values as parameters.
+If the message length is within the limit, it remains unchanged.
 
-# Task 3: Implement getElementWidth Function
+# Task 3: Spam Detection
 
 File: task-3.js
 
-Description: Define a function named getElementWidth that accepts three parameters and returns the calculated width of an element.
+The checkForSpam(message) function checks if a message contains banned words (spam or sale) in any case.
 
-Parameters: The function should take three input values.
+Returns true if spam is detected; otherwise, false.
+
+# Task 4: Shipping Cost
+
+File: task-4.js
+
+The getShippingCost(country) function determines the shipping cost based on the country using a switch statement.
+
+If the country is not listed, it returns "Sorry, there is no delivery to your country".
+
 
 # How to Use
 
