@@ -1,8 +1,12 @@
 "use strict";
 
 function formatMessage(message, maxLength) {
-  if (message.length >= maxLength) {
-    return `${message.slice(0, maxLength)}...`;
+  if (message.length <= maxLength) {
+    //Dize uzunluğu maxLength'e eşit veya daha kısa ise, işlev değişiklik yapmadan orijinal diziyi döndürür.
+    return message;
+  } else {
+    // Eğer uzunluk maxLength'i aşıyorsa, işlev diziyi maxLength karaktere kadar kısaltır, sonuna üç nokta "..." ekler ve kısaltılmış versiyonu döndürür.
+    return message.slice(0, maxLength) + "...";
   }
 }
 
